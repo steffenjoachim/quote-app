@@ -1,0 +1,69 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-black: black;
+    --clr-white: white;
+    --clr-background-header: rgb(241, 248, 254);
+    --clr-button: rgb(43, 113, 244);
+    --clr-font-light: rgb(182, 185, 189);
+ }
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--clr-white);
+    font-size: 1rem;
+    border: .75rem solid var(--clr-black);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    background-color: var(--clr-background-header);
+    padding: 8rem 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+}
+
+button {
+    background-color: var(--clr-button);
+    color: var(--clr-white);
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--clr-font-light);
+    font-size: 1.5rem;
+}
