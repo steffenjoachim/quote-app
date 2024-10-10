@@ -2,10 +2,13 @@ const btn = document.querySelector("button");
 btn.addEventListener("click", getQuote);
 
 async function getQuote() {
-    let response = await fetch("https://dummy-apis.netlify.app/api/quote");
-    let quoteJson = await response.json();
-    console.log(quoteJson);
-    renderQuote(quoteJson);
+    try {
+        let response = await fetch("https://dummy-apis.netlify.app/api/quote");
+        let quoteJson = await response.json();
+        renderQuote(quoteJson);
+    } catch (err) {
+        console.error(err);
+    }
 }
 
 function renderQuote(quoteJson) {

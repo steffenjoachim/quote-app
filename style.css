@@ -10,7 +10,6 @@
     --clr-black: black;
     --clr-white: white;
     --clr-background-header: rgb(241, 248, 254);
-    --clr-button: rgb(43, 113, 244);
     --clr-font-light: rgb(182, 185, 189);
  }
 
@@ -38,14 +37,6 @@ header {
 h1 {
     font-size: 3rem;
     margin-right: 1.5rem;
-}
-
-button {
-    background-color: var(--clr-button);
-    color: var(--clr-white);
-    font-size: 2rem;
-    padding: 1.5rem 1rem;
-    border-radius: .5rem;
 }
 
 main {
